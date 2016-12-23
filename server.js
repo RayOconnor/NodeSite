@@ -20,6 +20,10 @@ app.use("*",function(req,res){
   res.sendFile(path + "404.html");
 });
 
-http.listen(process.env.PORT || 3000, function(){
-  console.log('listening on', http.address().port);
+// set the port of our application
+// process.env.PORT lets the port be set by Heroku
+var port = process.env.PORT || 8080;
+
+app.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
 });
