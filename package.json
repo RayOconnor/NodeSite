@@ -1,5 +1,5 @@
 {
-  "name": "heroku-node",
+  "name": "rays-personal-site",
   "description": "Our sample Node to Heroku app",
   "main": "server.js",
   "scripts": {
