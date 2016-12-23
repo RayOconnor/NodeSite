@@ -1,1 +1,4 @@
-body    { background-color:green; }
+h3.indented-subheader {
+	padding-left: 30px;
+	color: dimgrey;
+}
