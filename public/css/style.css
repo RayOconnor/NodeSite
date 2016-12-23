@@ -1,4 +1,28 @@
 h3.indented-subheader {
-	padding-left: 30px;
 	color: dimgrey;
+}
+
+div.header-container {
+	
+}
+
+div.content-card {
+	margin: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: darkgray;
+    padding: 10px;
+
+}
+
+h2.card-header {
+	margin: 10px;
+}
+
+img.profile-img {
+	max-height: 300px;
+}
+
+img.card-img {
+	max-height: 150px
 }
