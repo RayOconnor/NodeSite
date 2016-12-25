@@ -7,73 +7,38 @@
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <script src="/bootstrap/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    
+    <script src="/navigation.js"></script>
+    
   </head>
-  <body>
+  <body ng-app="myApp">
+    <div navbar></div>
     <div>
-      <div>
-        <nav class="navbar navbar-default" role="navigation" style="padding-left:50px;">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"></a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right"> 
-                <li class="active"><a href="#">Home</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Work Experience<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">HubSpot | June 2016 - Dec 2016</a></li>
-                    <li><a href="#">HubSpot | May  2015 - Dec 2015</a></li> 
-                    <li><a href="#">Goldman Sachs | July  2014 - Dec 2014</a></li>  
-                  </ul>
-                </li>
-                <li><a href="#">Education</a></li>                
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mentorship<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Fellow | Jan 2016 - April 2016</a></li>
-                    <li><a href="#">Tutor  | Jan 2014 - April 2014</a></li>  
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hobbies<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Guitar</a></li>
-                    <li><a href="#">Running</a></li>  
-                    <li><a href="#">Kite Surfing</a></li> 
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+      <div class="container-fluid header-container">  
+        <div class="col-sm-4">
+          <img class="img-rounded img-responsive profile-img" src="/img/squareRayProfile.png" alt="profile">
         </div>
-        <div class="container header-container">
-          <div class="col-md-4">
-            <img class="img-rounded img-responsive profile-img" src="/img/squareRayProfile.png" alt="profile">
+        <div class="col-sm-5">
+          <h1>Raymond O'Connor</h1>  
+          <h3 class="indented-subheader">Software Engineer & Mentor</h3>
+        </div>
+      </div>
+      <div class="container content-card container-fluid">
+         <h2 class="card-header">Software Engineering Work Experience</h2> 
+         <div class="col-sm-3">
+            <img class="img-rounded img-responsive card-img" src="/img/hubspotLogo.png" alt="logos">
           </div>
-          <div class="col-md-8">
-            <h1>Raymond O'Connor</h1>  
-            <h3 class="indented-subheader">Software Engineer & Mentor</h3>
+          <div class="col-sm-7">
+            <h4>HubSpot</h4>
+            <h5>Software Engineer | June 2016 - Dec 2016<h5>
+            <h4>HubSpot</h4>
+            <h5>Software Engineer | May 2015 - Dec 2015<h5>
+            <h4>Goldman</h4>
+            <h5>Software Engineer | July 2014 - Dec 2014<h5>
           </div>
         </div>
-        <div class="container content-card col-md-10">
-           <h2 class="card-header">Software Engineering Work Experience</h2> 
-           <div class="col-md-3">
-              <img class="img-rounded img-responsive card-img" src="/img/hubspotLogo.png" alt="logos">
-            </div>
-            <div class="col-md-7">
-              <p>text</p>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
   </body>
