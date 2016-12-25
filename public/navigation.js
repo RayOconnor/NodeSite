@@ -38,6 +38,5 @@ app.directive('navbar', function() {
     templateUrl: '/navigation.html',
     scope: false
   };
-});
 
 });
