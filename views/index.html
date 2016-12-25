@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <script src="/bootstrap/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    
+    <script src="/navigation.js"></script>
+    
   </head>
-  <body>
+  <body ng-app="myApp">
+  
+    <div hello-world></div>
     <div>
       <div>
         <nav class="navbar navbar-default" role="navigation" style="padding-left:50px;">
@@ -55,22 +60,27 @@
           </div>
         </nav>
         </div>
-        <div class="container header-container">
-          <div class="col-md-4">
+        <div class="container-fluid header-container">  
+          <div class="col-sm-4">
             <img class="img-rounded img-responsive profile-img" src="/img/squareRayProfile.png" alt="profile">
           </div>
-          <div class="col-md-8">
+          <div class="col-sm-5">
             <h1>Raymond O'Connor</h1>  
             <h3 class="indented-subheader">Software Engineer & Mentor</h3>
           </div>
         </div>
-        <div class="container content-card col-md-10">
+        <div class="container content-card container-fluid">
            <h2 class="card-header">Software Engineering Work Experience</h2> 
-           <div class="col-md-3">
+           <div class="col-sm-3">
               <img class="img-rounded img-responsive card-img" src="/img/hubspotLogo.png" alt="logos">
             </div>
-            <div class="col-md-7">
-              <p>text</p>
+            <div class="col-sm-7">
+              <h4>HubSpot</h4>
+              <h5>Software Engineer | June 2016 - Dec 2016<h5>
+              <h4>HubSpot</h4>
+              <h5>Software Engineer | May 2015 - Dec 2015<h5>
+              <h4>Goldman</h4>
+              <h5>Software Engineer | July 2014 - Dec 2014<h5>
             </div>
           </div>
         </div>
