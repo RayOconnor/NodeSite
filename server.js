@@ -14,6 +14,10 @@ router.get("/",function(req,res){
   res.sendFile(path + "index.html");
 });
 
+router.get("/work-experience",function(req,res){
+  res.sendFile(path + "workExperience.html");
+});
+
 app.use("/",router);
 
 app.use("*",function(req,res){

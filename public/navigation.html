@@ -1,5 +1,5 @@
 <div ng-controller="Ctrl1">
-  <nav class="navbar navbar-default" role="navigation" style="padding-left:50px;">
+  <nav class="navbar navbar-default" role="navigation" style="padding-left:20px;">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
@@ -8,20 +8,18 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"></a>
+        <a class="navbar-brand" href="#">Ray's Space</a>
       </div>
       <div class="navbar-collapse collapse">
-        <ul ng-repeat="navHeader in navBarData" class="nav navbar-nav navbar-right"> 
-          <li ng-if="navHeader.isDropdown" class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{navHeader.name}}<b class="caret"></b></a>
-            <ul class="dropdown-menu">
+        <ul class="nav navbar-nav navbar-right"> 
+          <li ng-repeat="navHeader in navBarData">
+            <a ng-if="navHeader.isDropdown" href="/{{navHeader.path}}" class="dropdown-toggle" data-toggle="dropdown">{{navHeader.name}}<b class="caret"></b></a>
+            <ul ng-if="navHeader.isDropdown" class="dropdown-menu">
               <li ng-repeat="value in navHeader.dropdownValues">
                 <a href="#">{{value}}</a>
               </li>
             </ul>
-          </li>
-          <li ng-if="!navHeader.isDropdown"> 
-            <a href="#">{{navHeader.name}}</a>
+            <a ng-if="!navHeader.isDropdown" href="/{{navHeader.path}}">{{navHeader.name}}</a>
           </li>                  
         </ul>
       </div>
