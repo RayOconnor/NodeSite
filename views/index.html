@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Font-Awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap-social.css">
     <script src="/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     
@@ -14,30 +16,66 @@
   </head>
   <body ng-app="myApp">
     <div navbar></div>
-
-    <div class="container-fluid header-container">  
-      <div class="col-sm-4">
-        <img class="img-rounded img-responsive profile-img" src="/img/squareRayProfile.png" alt="profile">
-      </div>
-      <div class="col-sm-5">
-        <h1>Raymond O'Connor</h1>  
-        <h3 class="indented-subheader">Software Engineer & Mentor</h3>
-      </div>
-    </div>
-    <div class="container content-card container-fluid">
-       <h2 class="card-header">Software Engineering Work Experience</h2> 
-       <div class="col-sm-3">
-          <img class="img-rounded img-responsive card-img" src="/img/hubspotLogo.png" alt="logos">
-        </div>
-        <div class="col-sm-7">
-          <h4>HubSpot</h4>
-          <h5>Software Engineer | June 2016 - Dec 2016<h5>
-          <h4>HubSpot</h4>
-          <h5>Software Engineer | May 2015 - Dec 2015<h5>
-          <h4>Goldman</h4>
-          <h5>Software Engineer | July 2014 - Dec 2014<h5>
+    <div class="container-fluid col-xs-12 col-sm-10 col-md-8 col-md-offset-2 col-sm-offset-1 page-container">  
+      <div class="row card">
+        <img class="col-xs-12 col-sm-4 img-rounded img-responsive profile-img" src="/img/squareRayProfile.png" alt="profile">
+        <div class="col-sm-8">
+          <h1>Raymond O'Connor</h1>
+          <h3 class="indented-subheader">Software Engineer & Mentor</h3>
+          <a class="btn btn-social-icon btn-github" onClick="parent.open('http://github.com/RayOconnor')">
+            <span class="fa fa-github"></span>
+          </a>
+          <a class="btn btn-social-icon btn-linkedin" onClick="parent.open('https://www.linkedin.com/in/rayoconnor52')">
+            <span class="fa fa-linkedin"></span>
+          </a>
+          <a class="btn btn-social-icon btn-instagram" onClick="parent.open('https://www.instagram.com/raymond_oconnor')">
+            <span class="fa fa-instagram"></span>
+          </a>
         </div>
       </div>
-    </div>
+      <div class="card">
+        <div class="card-header row">  
+          <h2 class="col-xs-12 card-header">Software Development Experience</h2>
+        </div>
+        <div class="row">
+          <img align="left" class="col-xs-4 col-sm-3 col-lg-2  img-rounded img-responsive home-card-img" src="/img/hubspotLogo.png" alt="logos">
+          <div class="col-xs-8 col-sm-9 col-lg-10">
+            <div class="row">  
+              <h4 class="col-xs-12">HubSpot <small>June 2016 - Dec 2016</small></h4>
+            </div>
+            <div class="row">
+              <h4 class="col-xs-12">HubSpot <small>May 2015 - Dec 2015</small>
+            </div>
+            <div class="row">
+              <h4 class="col-xs-12">Goldman Sachs <small>July 2014 - Dec 2016</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header row">  
+          <h2 class="col-xs-12 card-header">Hobbies</h2>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); max-width:300px;"><div> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BJ8EDkgh2tq/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">The best way to get home from fire island. Thanks for taking the video @meljacques9</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A video posted by Ray Oconnor (@raymond_oconnor) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-09-04T15:08:40+00:00">Sep 4, 2016 at 8:08am PDT</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="row">  
+              <h4 class="col-xs-12">Kite Surfing</h4>
+            </div>
+            <div class="row">
+              <h4 class="col-xs-12">Guitar</h4>
+            </div>
+            <div class="row">
+              <h4 class="col-xs-12">Running</h4>
+            </div>
+            <div class="row">
+              <h4 class="col-xs-12">Traveling</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
   </body>
 </html>

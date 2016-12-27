@@ -8,32 +8,26 @@ app.controller("Ctrl1",function($scope){
   };
   $scope.navBarData = [
 	  {
-			name : 'Home',
-			path : '',
-			isDropdown: false,
-			dropdownValues: []
-	  },
-	  {
 			name : 'Work Experience',
-			path : 'work-experience',
+			path : '/work-experience',
 			isDropdown: false,
 			dropdownValues: ['HubSpot | June 2016 - Dec 2016', 'HubSpot | May  2015 - Dec 2015', 'Goldman Sachs | July  2014 - Dec 2014']
 	  },
 	  {
 	  	name : 'Education',
-	  	path : 'education',
+	  	path : '/education',
 			isDropdown: false,
 	  	dropdownValues: []
 	  },
 	  {
 			name : 'Mentorship',
-			path : 'mentorship',
+			path : '/mentorship',
 			isDropdown: true,
 			dropdownValues: ['Fellow | Jan 2016 - April 2016', 'Tutor  | Jan 2014 - April 2014 Surfing']
 	  },
 	  {
 			name : 'Hobbies',
-			path : 'hobbies',
+			path : '/hobbies',
 			isDropdown: true,
 			dropdownValues: ['Performing', 'Kite Surfing', 'Running']
 	  } 

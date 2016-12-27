@@ -8,18 +8,18 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Ray's Space</a>
+        <a class="navbar-brand nav-text" href="/">Ray's Space</a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right"> 
           <li ng-repeat="navHeader in navBarData">
-            <a ng-if="navHeader.isDropdown" href="/{{navHeader.path}}" class="dropdown-toggle" data-toggle="dropdown">{{navHeader.name}}<b class="caret"></b></a>
+            <a ng-if="navHeader.isDropdown" href="/{{navHeader.path}}" class="dropdown-toggle nav-text" data-toggle="dropdown">{{navHeader.name}}<b class="caret"></b></a>
             <ul ng-if="navHeader.isDropdown" class="dropdown-menu">
               <li ng-repeat="value in navHeader.dropdownValues">
                 <a href="#">{{value}}</a>
               </li>
             </ul>
-            <a ng-if="!navHeader.isDropdown" href="/{{navHeader.path}}">{{navHeader.name}}</a>
+            <a ng-if="!navHeader.isDropdown" class="nav-text" href="{{navHeader.path}}">{{navHeader.name}}</a>
           </li>                  
         </ul>
       </div>
