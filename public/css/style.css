@@ -2,7 +2,9 @@ h3 {
 	color: dimgrey;
 }
 
-
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: ghostwhite;
+}
 
 h4.card-sub-header {
 	margin-top:31px;
