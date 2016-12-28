@@ -18,6 +18,18 @@ router.get("/work-experience",function(req,res){
   res.sendFile(path + "workExperience.html");
 });
 
+router.get("/hobbies",function(req,res){
+  res.sendFile(path + "hobbies.html");
+});
+
+router.get("/education",function(req,res){
+  res.sendFile(path + "education.html");
+});
+
+router.get("/mentorship",function(req,res){
+  res.sendFile(path + "mentorship.html");
+});
+
 app.use("/",router);
 
 app.use("*",function(req,res){
