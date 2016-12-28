@@ -22,13 +22,13 @@ app.controller("Ctrl1",function($scope){
 	  {
 			name : 'Mentorship',
 			path : '/mentorship',
-			isDropdown: true,
+			isDropdown: false,
 			dropdownValues: ['Fellow | Jan 2016 - April 2016', 'Tutor  | Jan 2014 - April 2014 Surfing']
 	  },
 	  {
 			name : 'Hobbies',
 			path : '/hobbies',
-			isDropdown: true,
+			isDropdown: false,
 			dropdownValues: ['Performing', 'Kite Surfing', 'Running']
 	  } 
 	];
