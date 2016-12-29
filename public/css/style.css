@@ -25,8 +25,12 @@ img.home-card-img {
 }
 
 p { 
-   text-indent: 30px;
-   font-weight: 500;
+  text-indent: 30px;
+  font-weight: 500;
+}
+
+p.site-summary {
+	margin-top: 10px;
 }
 
 p.card-description {
@@ -36,9 +40,9 @@ p.card-description {
 
 div.card {
 	border-style: solid;
-    border-width: 1px 0 0;
-    border-color: darkgrey;
-    padding-bottom: 2vw;
+  border-width: 1px 0 0;
+  border-color: darkgrey;
+  padding-bottom: 2vw;
 }
 
 div.page-container {
@@ -50,20 +54,24 @@ div.page-container {
 nav.navbar-default {
 	background-color: #6C648B;
 	border-radius: 0px;
-    width: 100%;
-    border-width: 0px;
+  width: 100%;
+  border-width: 0px;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: ghostwhite;
+  color: ghostwhite;
 } 
 
 .navbar-default .navbar-brand {
-    color: ghostwhite;
+	color: ghostwhite;
 }
 
 body {
 	background-color:#B6A19E ;
+}
+
+blockquote.instagram-media {
+	max-width: 300px
 }
 
 
